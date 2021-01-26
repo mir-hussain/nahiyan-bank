@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#login-area > h1 {
+  padding: 100px;
+  text-align: center;
+}
+
+.login-card {
+  padding: 50px;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.5);
+}
+
+#transaction-area {
+  display: none;
+}
+
+.balance-area {
+  display: flex;
+  justify-content: center;
+}
+
+.money-section {
+  height: 100px;
+  width: 300px;
+  border-radius: 15px;
+  font-family: fantasy;
+  color: white;
+  padding: 15px;
+  margin: 20px;
+  -webkit-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.money-section > h2 {
+  font-weight: bold;
+}
+
+#deposit {
+  background-color: #08aeea;
+  background-image: linear-gradient(45deg, #08aeea 0%, #2af598 100%);
+}
+
+#withdraw {
+  background-color: #ffe53b;
+  background-image: linear-gradient(225deg, #ffe53b 0%, #ff2525 74%);
+}
+
+#balance {
+  background-color: #74ebd5;
+  background-image: linear-gradient(225deg, #74ebd5 0%, #9face6 100%);
+}
+
+.user-input-area {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.input {
+  height: 300px;
+  width: 450px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+#withdraw-button {
+  background-color: #ffe53b;
+  background-image: linear-gradient(225deg, #ffe53b 0%, #ff2525 74%);
+  border: none;
+}
+
+#deposit-button {
+  background-color: #08aeea;
+  background-image: linear-gradient(45deg, #08aeea 0%, #2af598 100%);
+  border: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #login-area > h1 {
+    padding: 20px;
+  }
+  .money-section {
+    height: 80px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .user-input-area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  .input {
+    height: 200px;
+    margin: 10px 0;
+  }
+
+}

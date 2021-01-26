@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nahiyan Bank Limited</title>
+  </head>
+  <body>
+    <div id="login-area">
+      <h1>Welcome to Nahiyan Bank Limited.</h1>
+      <div class="login-card">
+        <input
+          id="email"
+          class="form-control form-control-lg"
+          type="email"
+          placeholder="E-mail"
+        />
+        <br />
+        <input
+          id="password"
+          class="form-control form-control-lg"
+          type="password"
+          placeholder="Password"
+        />
+        <br />
+        <button class="btn btn-dark" id="login-button">Log in</button>
+      </div>
+    </div>
+    <div id="transaction-area">
+        <div class="balance-area">
+            <div class="money-section" id="deposit">
+                <h5>Deposit</h5>
+                <h2>$ <span id="current-deposit"> 00 </span> </h2>
+            </div>
+            <div class="money-section" id="withdraw">
+                <h5>Withdraw</h5>
+                <h2>$ <span id="current-withdraw"> 00 </span></h2>
+            </div>
+            <div class="money-section" id="balance">
+                <h5>Balance</h5>
+                <h2>$ <span id="current-balance"> 00 </span></h2>
+            </div>
+        </div>
+        <div class="user-input-area">
+          <div class="input">
+            <h2>Deposit</h2>
+            <input id="deposit-amount" class="form-control form-control-lg" type="text" placeholder="Please enter the amount.">
+            <button class="btn btn-dark" id="deposit-button">Proceed</button>
+          </div>
+          <div class="input">
+              <h2>Withdraw</h2>
+              <input id="withdraw-amount" class="form-control form-control-lg" type="text" placeholder="Please enter the amount.">
+              <button class="btn btn-dark" id="withdraw-button">Proceed</button>
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
